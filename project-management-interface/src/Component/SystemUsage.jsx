@@ -8,9 +8,14 @@ import React, { useState, useEffect } from 'react';
 
 const SystemUsage = () => {
 
-    const [stats, setSystemUsage] = useState({create_project_count: 0,
-        create_table_count:0,create_task_count:0,
-        create_taskDuplicate_count:0,create_taskDelete_count:0
+    const [stats, setSystemUsage] = useState({
+        create_project_count:0,
+        create_table_count:0,
+        create_task_count:0,
+        create_taskDuplicate_count:0,
+        create_taskDelete_count:0,
+        create_sort_count:0
+
     });
 
 
@@ -43,16 +48,12 @@ const SystemUsage = () => {
 
     const Datastats = [
         ["Type of User", "Total numbers"],
-        ["Projects Usage Count", stats.create_project_count],
-        ["Tables Usage Count", stats.create_table_count],
+        ["Project Usage Count", stats.create_project_count],
+        ["Table Usage Count", stats.create_table_count],
         ["Tasks Usage Count", stats.create_task_count],
-        ["Duplicate Task Usage Count", stats.create_taskDuplicate_count],
-        ["Delete Task Usage Count", stats.create_taskDelete_count]
-
-        
-
-
-        
+        ["Duplicate Usage Count", stats.create_taskDuplicate_count],
+        ["Task Delete Usage Count", stats.create_taskDelete_count],
+        ["Sort Usage Count", stats.create_sort_count]
     ];
 
     

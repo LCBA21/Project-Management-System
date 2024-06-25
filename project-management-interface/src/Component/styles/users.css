@@ -152,3 +152,25 @@
      font-family: Roboto, sans-serif;
      font-weight: 400;
 }
+
+.user_bargraph{
+    position: relative;
+    top: -400px;
+    left: 30rem;
+    width: 30%;
+    height: 30%;
+
+}
+
+
+.user_bargraph h6{
+    font-size: 15px;
+    position: absolute;
+    top: -20.5px;
+    left: 12rem;
+    color: #333;
+    z-index: 1;
+     font-family: Roboto, sans-serif;
+     font-weight: 400;
+
+}

@@ -23,6 +23,7 @@ function Sidebar() {
 
   useEffect(() => { 
     const systemUser = JSON.parse(sessionStorage.getItem("systemUser"));
+   
     if (systemUser) {
       const foundRole = systemUser.role.filter(user => user == "USER" || user == "ADMIN")
       setuserRole(foundRole[0])
@@ -54,6 +55,7 @@ function Sidebar() {
     };
     fetchData();
   },[]);
+
   const loadProject =(projectId)=>{
     sessionStorage.setItem("projectId", projectId);
     window.location.href = "project";

@@ -16,6 +16,8 @@ import ProfileEditPage from "./Component/ProfileEditPage";
 import NotificationSettings from "./Component/NotificationSettings";
 import OAuth2Login from "./Component/Oauth2Login";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ProjectStats from "./Component/ProjectStats";
+import SystemUsage from "./Component/SystemUsage";
 
 function App() {
   return (
